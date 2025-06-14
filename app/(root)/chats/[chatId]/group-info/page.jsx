@@ -2,7 +2,7 @@
 
 import Loader from "@components/Loader";
 import { GroupOutlined, PersonOutline } from "@mui/icons-material";
-import { CldUploadButton } from "next-cloudinary";
+// import { CldUploadButton } from "next-cloudinary";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -97,13 +97,13 @@ const GroupInfo = () => {
             alt="profile"
             className="w-40 h-40 rounded-full"
           />
-          <CldUploadButton
+          {/* <CldUploadButton
             options={{ maxFiles: 1 }}
             onUpload={uploadPhoto}
             uploadPreset="upecg01j"
           >
             <p className="text-body-bold">Upload new photo</p>
-          </CldUploadButton>
+          </CldUploadButton> */}
         </div>
 
         <div className="flex flex-wrap gap-3">

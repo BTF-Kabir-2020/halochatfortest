@@ -5,7 +5,7 @@ import Loader from "./Loader";
 import { AddPhotoAlternate } from "@mui/icons-material";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
-import { CldUploadButton } from "next-cloudinary";
+// import { CldUploadButton } from "next-cloudinary";
 import MessageBox from "./MessageBox";
 import { pusherClient } from "@lib/pusher";
 
@@ -162,7 +162,7 @@ const ChatDetails = ({ chatId }) => {
 
         <div className="send-message">
           <div className="prepare-message">
-            <CldUploadButton
+            {/* <CldUploadButton
               options={{ maxFiles: 1 }}
               onUpload={sendPhoto}
               uploadPreset="upecg01j"
@@ -175,7 +175,7 @@ const ChatDetails = ({ chatId }) => {
                   "&:hover": { color: "red" },
                 }}
               />
-            </CldUploadButton>
+            </CldUploadButton> */}
 
             <input
               type="text"
